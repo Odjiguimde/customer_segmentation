@@ -2,7 +2,7 @@
 
 > Application interactive de segmentation clients par clustering non-supervisé, avec réduction de dimensions et visualisations avancées.
 
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)]([https://streamlit.io](https://rtr2eednbjtntbyv6uzxze.streamlit.app/))
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)]([https://rtr2eednbjtntbyv6uzxze.streamlit.app/])
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
 [![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)](https://plotly.com)
