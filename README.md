@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Contexte
+## Contexte
 
 Ce projet s'inscrit dans le cadre d'une problématique marketing :
 
@@ -19,7 +19,7 @@ La segmentation client permet d'identifier des groupes homogènes dans une base 
 
 ---
 
-## 🗂 Dataset
+## Dataset
 
 **Source :** [Customer Segmentation — Kaggle](https://www.kaggle.com/datasets/kaushiksuresh147/customer-segmentation)
 
@@ -39,7 +39,7 @@ La segmentation client permet d'identifier des groupes homogènes dans une base 
 
 ---
 
-## 🚀 Installation & Lancement local
+## Installation & Lancement local
 
 ### Prérequis
 
@@ -69,7 +69,7 @@ L'application s'ouvre automatiquement sur [http://localhost:8501](http://localho
 
 ---
 
-## ☁️ Déploiement sur Streamlit Cloud
+## Déploiement sur Streamlit Cloud
 
 1. **Pousser le projet sur GitHub** (repo public ou privé)
 
@@ -92,7 +92,7 @@ git push -u origin main
 
 ---
 
-## 🧠 Algorithmes implémentés
+## Algorithmes implémentés
 
 ### Clustering
 
@@ -113,7 +113,7 @@ Toutes les visualisations sont disponibles en **2D et 3D**.
 
 ---
 
-## 📊 Fonctionnalités de l'application
+## Fonctionnalités de l'application
 
 ```
 Sidebar
@@ -148,7 +148,7 @@ Onglet 5 — Données
 
 ---
 
-## 📐 Métriques de qualité
+## Métriques de qualité
 
 | Métrique | Interprétation |
 |---|---|
@@ -158,7 +158,7 @@ Onglet 5 — Données
 
 ---
 
-## 🏗 Structure du projet
+## Structure du projet
 
 ```
 customer_segmentation/
@@ -171,7 +171,7 @@ customer_segmentation/
 
 ---
 
-## 📦 Dépendances principales
+## Dépendances principales
 
 ```
 streamlit >= 1.32
@@ -185,7 +185,7 @@ matplotlib >= 3.7
 
 ---
 
-## 🎓 Compétences mises en œuvre
+## Compétences mises en œuvre
 
 - **Clustering non supervisé** : KMeans, CAH, DBSCAN
 - **Réduction de dimensions** : PCA, t-SNE
@@ -196,6 +196,6 @@ matplotlib >= 3.7
 
 ---
 
-## 📄 Licence
+## Licence
 
 MIT — libre d'utilisation, de modification et de distribution.
