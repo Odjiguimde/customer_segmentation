@@ -588,7 +588,8 @@ with tab3:
             fill="tozeroy", fillcolor="rgba(196,168,130,0.05)",
             name="Inertie",
         ))
-        fig_elbow.update_layout(**PLOTLY_LAYOUT, height=320,
+        fig_elbow.update_layout(**{k: v for k, v in PLOTLY_LAYOUT.items() if k not in ["xaxis","yaxis"]},
+                                height=320,
                                 title=dict(text="Méthode du Coude (Inertie)", font=dict(color="#e8e4dc", size=13)),
                                 xaxis=dict(**PLOTLY_LAYOUT["xaxis"], title="k"),
                                 yaxis=dict(**PLOTLY_LAYOUT["yaxis"], title="Inertie"))
@@ -602,7 +603,8 @@ with tab3:
             text=[f"{s:.3f}" for s in sil_scores], textposition="outside",
             textfont=dict(color="#8b8fa8", size=9),
         ))
-        fig_sil.update_layout(**PLOTLY_LAYOUT, height=320,
+        fig_sil.update_layout(**{k: v for k, v in PLOTLY_LAYOUT.items() if k not in ["xaxis","yaxis"]},
+                               height=320,
                                title=dict(text="Score de Silhouette par k", font=dict(color="#e8e4dc", size=13)),
                                xaxis=dict(**PLOTLY_LAYOUT["xaxis"], title="k"),
                                yaxis=dict(**PLOTLY_LAYOUT["yaxis"], title="Silhouette"))
@@ -671,10 +673,11 @@ with tab4:
         fig_pca.add_hline(y=0.90, line_dash="dot", line_color="#f43f5e",
                           annotation_text="90%", annotation_font_color="#f43f5e", yref="y2")
         fig_pca.update_layout(
-            **PLOTLY_LAYOUT, height=350,
+            **{k: v for k, v in PLOTLY_LAYOUT.items() if k not in ["xaxis","yaxis","legend"]},
+            height=350,
             yaxis2=dict(overlaying="y", side="right", range=[0, 1.05],
                         tickformat=".0%", tickfont=dict(color="#4a4a6a"),
-                        gridcolor="transparent"),
+                        gridcolor="rgba(0,0,0,0)"),
             xaxis=dict(**PLOTLY_LAYOUT["xaxis"], title="Composante"),
             yaxis=dict(**PLOTLY_LAYOUT["yaxis"], title="Variance expliquée"),
             legend=dict(**PLOTLY_LAYOUT["legend"]),
@@ -692,7 +695,8 @@ with tab4:
             fig_load = px.bar(loadings.reset_index(), x="index", y=["PC1","PC2"],
                               barmode="group", color_discrete_sequence=["#c4a882","#8b5cf6"],
                               height=260)
-            fig_load.update_layout(**PLOTLY_LAYOUT, showlegend=True,
+            fig_load.update_layout(**{k: v for k, v in PLOTLY_LAYOUT.items() if k not in ["xaxis","yaxis"]},
+                                   showlegend=True,
                                    xaxis=dict(**PLOTLY_LAYOUT["xaxis"], title=""),
                                    yaxis=dict(**PLOTLY_LAYOUT["yaxis"], title="Loading"))
             st.plotly_chart(fig_load, use_container_width=True)
