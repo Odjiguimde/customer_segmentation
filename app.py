@@ -548,9 +548,9 @@ with tab2:
             color_continuous_scale=[[0, "#0a0a0f"], [0.5, "#4a2c6e"], [1, "#c4a882"]],
             aspect="auto", height=300,
         )
-        fig_heat.update_layout(**{k: v for k, v in PLOTLY_LAYOUT.items() if k not in ["xaxis","yaxis"]},
-                               xaxis=dict(title="Cluster", tickfont=dict(color="#8b8fa8")),
-                               yaxis=dict(title="", tickfont=dict(color="#8b8fa8"), gridcolor="transparent"))
+        fig_heat.update_layout(**{k: v for k, v in PLOTLY_LAYOUT.items() if k not in ["xaxis","yaxis"]})
+        fig_heat.update_xaxes(title="Cluster", tickfont=dict(color="#8b8fa8"), gridcolor="#1e1e2e")
+        fig_heat.update_yaxes(title="", tickfont=dict(color="#8b8fa8"), gridcolor="rgba(0,0,0,0)")
         st.plotly_chart(fig_heat, use_container_width=True)
 
     # Box plots
