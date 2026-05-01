@@ -24,11 +24,9 @@ st.set_page_config(
 # ── Custom CSS ───────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap');
-
-/* Base */
-html, body, [class*="css"] {
-    font-family: 'Syne', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+html, body {
+  font-family: 'Inter', sans-serif;
 }
 .stApp {
     background: #0a0a0f;
